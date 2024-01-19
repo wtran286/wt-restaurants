@@ -5,7 +5,7 @@ I created a react app that has two restaurant menu for ordering. User's cart is 
 ```npm start``` in the directory
 
 you should see something like this:
-
+-----------------------------------------------
 Compiled successfully!
 
 You can now view wt-restaurants in the browser.
@@ -17,12 +17,12 @@ Note that the development build is not optimized.
 To create a production build, use npm run build.
 
 webpack compiled successfully
-
+-----------------------------------------------
 ## check unit test
 ```npm test```
 
 you should see something like this:
-
+-----------------------------------------------
  PASS  src/redux/slices/cartSlice.test.js
   cart slice reducer
     ✓ should handle addItem (2 ms)
@@ -42,4 +42,4 @@ Watch Usage
  › Press p to filter by a filename regex pattern.
  › Press t to filter by a test name regex pattern.
  › Press Enter to trigger a test run.
-
+-----------------------------------------------
