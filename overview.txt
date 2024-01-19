@@ -1,0 +1,12 @@
+* An overview of your application:
+    * A paragraph about how it works? What is going on behind the scenes?
+		The initial page will show two restaurants available for selection. Each Restaurant has a menu button. When the menu button is clicked on, the menu items item will appear with an image, price, calories, and add button. There is a Cart on the right side of page. Anything added to cart will show up in the cart. Cart items will be calculated total and can be removed. The cart items are grouped by store. You can “”View Cart / Checkout” which will bring you to the checkout page. The checkout page will display same information as cart and you can click on “back to main” button to return to initial page.
+
+    * A paragraph about how you approached solving this problem.
+		I knew we needed more than one Restaurants and cart to hold selection. I assume that each restaurant should have different items and can be added multiple times. I decided to group cart items by store to avoid repeating stores name over and over. I made sure that add/remove cart functions work as intending. After everything is done, I started messing with css/scss to pretty up the page.
+
+    * A paragraph about why you picked the language/framework you did.
+		I picked react for this project. I opt out not using prototypes for this project because of time. In normal work wise, I would probably used typescript. I believe types is important. It takes away the guessing game of what variable is coming in which will help the next engineer.
+
+    * A paragraph about how you might extend this if you were building a more robust instance of the same application.
+		The current implementation is be capable to support like custom orders. You can add multiples of any item and each item is unique. I would probably need to build a backend that is actually taking the data. I can definitely add some caching to help with performance. I think my UI is okay but I can definitely use some UI/UX design help. HAHA
