@@ -2,6 +2,7 @@
 I created a react app that has two restaurant menu for ordering. User's cart is display on the right side. You can add/remove menu items to cart and it will be displayed. 
 
 ## How to run
+```npm install```
 ```npm start``` in the directory
 
 you should see something like this:

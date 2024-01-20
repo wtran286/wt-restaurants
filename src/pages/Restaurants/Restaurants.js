@@ -1,22 +1,24 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import Location from "../../components/Location/Location";
 import { mockRestaurants } from "../../constants/restaurants";
 import UserCart from "../../components/UserCart/UserCart";
+import { selectLocation, setLocation } from "../../redux/slices/locationSlice";
 
 import styles from './Restaurants.module.scss';
 
 const Restaurants = () => {
-
-    const [locations, setLocations] = useState([]);
+    const dispatch = useDispatch();
+    const { location } = useSelector(selectLocation);
 
     useEffect(() => {
-        setLocations(mockRestaurants);
-    }, []);
+        dispatch(setLocation(mockRestaurants));
+    }, [dispatch]);
 
     return (
         <div className={styles.restaurantsContainer}>
             <div className={styles.restaurantLocation}>
-                { locations.map((loc) => 
+                { location.map((loc) => 
                     <Location
                         address={loc.address}
                         hours={loc.hours}

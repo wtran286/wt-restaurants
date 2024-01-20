@@ -13,7 +13,7 @@ export const cartSlice = createSlice({
             state.cart[actionKeys[0]].push(action.payload[actionKeys[0]][0])
         }
         else {
-            state.cart = { ...action.payload, ...state.cart };
+            state.cart = { ...action.payload };
         }
     },
     removeItem: (state, action) => {
